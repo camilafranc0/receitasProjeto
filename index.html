@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Login</title>
+</head>
+<body>
+    <div class="w-full h-screen flex">
+        <div class="hidden items-center flex-col justify-center lg:flex lg:w-[55%] bg-[#E27D60] p-[3rem]">
+            <h1 class="text-[#fff] text-center font-semibold text-4xl mt-[2.5rem]">Bem-vindo de volta!</h1>
+            <img class="w-[70%] h-[75%] mt-[2rem]" src="./src/img/ilustracao_sem_fundo 1.png" alt="">
+            <p class="text-white mt-auto">Entre e compartilhe as suas receitas favoritas</p>
+        </div>
+        <!--[var(--color-primary)]-->
+        <div class="w-full h-screen flex items-center p-[2rem] justify-center flex-col lg:w-[45%] lg:p-[2rem]">
+            <h1 class="text-[#E27D60] text-4xl font-bold uppercase md:text-5xl lg:text-4xl">Login</h1>
+            <form class="w-[100%] flex flex-col mt-[5rem] md:w-[43rem] lg:w-full ">
+                    <label for="email" class=" text-[#374151] text-base font-medium">Email:</label>
+                    <input type="email" id="email" placeholder="Digite o seu email" class="w-full md:w-[43rem]  lg:w-full p-4 rounded-md
+                border border-[#FED8AC]
+                focus:outline-none
+                focus:ring-2 focus:ring-[#E27D60] mt-[0.5rem]">
+
+                <label for="password" class="text-[#374151] text-base font-medium mt-[2rem]">Senha:</label>
+                    <input type="password" id="password" placeholder="Digite a sua senha" class="w-full p-4 rounded-md
+                border border-[#FED8AC]
+                focus:outline-none
+                focus:ring-2 focus:ring-[#E27D60] mt-[0.5rem] md:w-[43rem] lg:w-full">
+
+                <div class="mt-[3rem] flex items-center justify-between gap-2 w-full">
+                    
+                    <input type="checkbox" class="border border-[#E27D60]" name="remember" id="remember">
+                    <label for="remember" class="text-[#374151] text-sm font-medium">Lembre-me</label>
+
+                    <a href="#" class="ml-auto text-sm text-[#1888B8] font-medium hover:underline">Esqueceu a senha?</a>
+
+                </div>
+                <button type="submit" class="bg-[#E27D60] rounded-md w-full p-3 text-white font-semibold text-xl
+                transition-colors duration-300
+                hover:bg-[#E88A70] mt-[2rem]">Entrar</button>
+                <div class="flex items-center  justify-center gap-2 mt-[1.5rem] ">
+                    <p class="text-[#374151] text-sm font-medium">Não tem uma conta?</p>
+                    <a href="#" class="text-[#1888B8] text-sm font-medium hover:underline">Cadastrar-se</a>
+                </div>
+                
+            </form>
+        
+        </div>
+    </div>
+</body>
+</html>
