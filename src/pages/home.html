@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Home</title>
+</head>
+<body class="h-screen">
+    <nav id="sidebar" class=" flex-col justify-between md:flex sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-[320px] overflow-y-auto text-center bg-[#E27D60] rounded-tr-md rounded-br-md space-y-4 h-screen transform -translate-x-full transition-transform duration-500 lg:translate-x-00 lg:translate-x-0 md:translate-x-0" >
+         <!-- botão X (só no mobile) -->
+        <button id="closeBtn" class="absolute top-4 right-4 text-white text-2xl lg:hidden md:hidden">
+            <i class="bi bi-x"></i>
+        </button>
+        <div >
+            <div class="text-center w-full "> 
+                <div class="flex items-center gap-2 w-full justify-center p-[2.5rem] space-x-2">
+                    <i class="bi bi-person-circle text-[#fff] text-3xl"></i>
+                    <h2 class="text-[#fff] text-2xl">Olá, Camila!</h2>
+                </div>
+                <!-- <i class="bi bi-x "></i> -->
+            </div>
+            <div class="md:pl-3 mt-[1.5rem]">
+                <ul class="space-y-2 text-sm md:space-y-3 lg:space-y-4">
+                    <li class="text-left">
+                        <a href="#" class="flex items-center p-2 space-x-3 rounded-md text-white hover:bg-[#E88A70] text-base">
+                            <i class="bi bi-house-door"></i>
+                            <span>Início</span>
+                        </a>
+                    </li>
+                    <li class="text-left">
+                        <a href="#" class="flex items-center p-2 space-x-3 rounded-md text-white hover:bg-[#E88A70] text-base">
+                            <i class="bi bi-book"></i>
+                            <span>Minhas receitas</span>
+                        </a>
+                    </li>
+                    <li class="text-left">
+                        <a href="#" class="flex items-center p-2 space-x-3 rounded-md text-white hover:bg-[#E88A70] text-base">
+                            <i class="bi bi-bookmark"></i>
+                            <span>Favoritos</span>
+                        </a>
+                    </li>
+                    <li class="text-left">
+                        <a href="#" class="flex items-center p-2 space-x-3 rounded-md text-white hover:bg-[#E88A70] text-base">
+                            <i class="bi bi-person-square"></i>
+                            <span>Perfil</span>
+                        </a>
+                    </li>
+
+                
+                    
+                </ul>
+
+            </div>
+         </div>
+         <ul class=" text-sm md:pl-3 pb-6 pl-1">
+                    <li class=" text-left">
+                        <a href="#" class="flex items-center p-2 space-x-3   rounded-md text-white hover:bg-[#E88A70] text-base">
+                            <i class="bi bi-box-arrow-right"></i>
+                            <span>Sair</span>
+                        </a>
+                    </li>
+        </ul>
+      
+                
+    </nav>
+
+    <button id="openBtn" class="absolute top-4 left-4 text-2xl lg:hidden md:hidden">
+        <i class="bi bi-list text-[#E27D60] text-3xl"></i>
+    </button>
+
+    <!-- 
+        <div>
+            Navbar 
+            <header>
+                <label for="searchReceita"><i class="fa-solid fa-magnifying-glass text-[#848684]"></i></label>
+                
+                <input type="text" id="searchReceita" placeholder="Buscar receita...">
+                <i class="fa-solid fa-filter text-[#848684]"></i>
+            </header>
+        </div>
+    -->
+    <script src="../js/home.js"></script>
+</body>
+</html>
